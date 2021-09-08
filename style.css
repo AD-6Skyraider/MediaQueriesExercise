@@ -1,0 +1,82 @@
+h1 {
+    color: gray;
+    font-size: 50px;
+    margin: 0;
+  }
+  
+  body {
+    height: 100vh;
+  }
+  
+  /* START BELOW THIS LINE */
+
+  /* Question 1 */
+  @media (max-width: 800px) {
+      body {
+          background-color: navy;
+        }
+        #two {
+            color: navy;              ;
+        }
+  }
+
+  /* Question 2 */
+  @media (max-width: 600px) {
+    body {
+        background-color:orange;
+    }
+    #two {
+        color: orange;              ;
+    }
+}
+
+/* Question 3 */
+@media (max-height: 400px) and (min-width: 600px) {
+    #one, #three {
+        border: 10px dashed gray;
+    }
+}
+
+/* Question 4 */
+@media (min-width: 900px), (min-height: 500px) {
+    #two {
+        border: 10px solid gray;
+    }
+}
+
+/* Question 5 */
+@media (orientation: landscape) {
+    body {
+        display: flex;
+        flex-direction: row;
+  }
+     
+}
+
+/* Question 6 */
+@media (orientation: portrait) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  }
+    
+}
+
+/* Bonus 1 */
+@media print {
+    h1 {
+        text-transform: uppercase;
+        color: green;
+    }
+}
+
+/* Bonus 2 */
+/* Nested in Question2 1 & 2  */
+
+/* Bonus 3 */
+@media (min-width:750px) and (max-width: 775px) and (min-height: 550px) and (max-height: 575px) {
+    h1 {
+        font-style: italic;
+    }
+}
